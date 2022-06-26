@@ -97,7 +97,7 @@ buttons = [
         InlineKeyboardButton(text=f"Infomation {dispatcher.bot.first_name}", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="Fitur Adm", callback_data="emiko_admin"),
+        InlineKeyboardButton(text="Fitur Admin", callback_data="emiko_admin"),
         InlineKeyboardButton(
             text="Music Bot", callback_data="source_"
         ),
@@ -356,7 +356,7 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text=f"๏ Saya *{dispatcher.bot.first_name}*, bot manajemen grup yang kuat yang dibuat untuk membantu Anda mengelola grup dengan mudah."
+            text=f"๏›› Saya *{dispatcher.bot.first_name}*, bot manajemen grup yang kuat yang dibuat untuk membantu Anda mengelola grup dengan mudah."
             "\n\n• Saya dapat membatasi pengguna."
             "\n• Saya dapat menyapa pengguna dengan pesan selamat datang yang dapat disesuaikan dan bahkan menetapkan aturan grup."
             "\n• Saya memiliki sistem anti-spam yang canggih."
@@ -396,15 +396,15 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_admin":
         query.message.edit_text(
-            text=f"*๏ Ayo buat grup Anda sedikit efektif sekarang*"
+            text=f"*๏›› Ayo buat grup Anda sedikit efektif sekarang*"
             f"\nSelamat, {dispatcher.bot.first_name} sekarang siap untuk mengelola grup Anda."
              "\n\n*Fitur Admin*"
-             "\nAlat Admin Dasar membantu Anda melindungi dan memperkuat grup Anda."
-             "\nAnda dapat mencekal anggota, Menendang anggota, Mempromosikan seseorang sebagai admin melalui perintah bot."
+             "\n• Alat Admin Dasar membantu Anda melindungi dan memperkuat grup Anda."
+             "\n• Anda dapat mencekal anggota, Menendang anggota, Mempromosikan seseorang sebagai admin melalui perintah bot."
              "\n\n*Selamat Datang*"
-             "\nMari kita atur pesan selamat datang untuk menyambut pengguna baru yang datang ke grup Anda."
-             "\nkirim ``/setwelcome`` [pesan] untuk menyetel pesan selamat datang!"
-             "\nKirim ``/welcome`` [off/on] untuk mematikan pesan selamat datang pada bot.",
+             "\n• Mari kita atur pesan selamat datang untuk menyambut pengguna baru yang datang ke grup Anda."
+             "\n• Kirim ``/setwelcome`` [pesan] untuk menyetel pesan selamat datang!"
+             "\n• Kirim ``/welcome`` [off/on] untuk mematikan pesan selamat datang pada bot.",
              parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -419,9 +419,9 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_notes":
         query.message.edit_text(
-            text=f"<b>๏ Setting untuk notes</b>"
-             f"\nAnda dapat menyimpan pesan/media/audio atau apa pun sebagai catatan"
-             f"\nUntuk mendapatkan catatan cukup gunakan # di awal kata"
+            text=f"<b>๏›› Setting untuk notes</b>"
+             f"\n• Anda dapat menyimpan pesan/media/audio atau apa pun sebagai catatan"
+             f"\n• Untuk mendapatkan catatan cukup gunakan # di awal kata"
              f"\n\nAnda juga dapat mengatur tombol untuk catatan dan filter (lihat menu bantuan)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
