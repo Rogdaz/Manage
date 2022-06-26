@@ -405,7 +405,7 @@ def emiko_about_callback(update, context):
              "\nMari kita atur pesan selamat datang untuk menyambut pengguna baru yang datang ke grup Anda."
              "\nkirim ``/setwelcome`` [pesan] untuk menyetel pesan selamat datang!"
              "\nKirim ``/welcome`` [off/on] untuk mematikan pesan selamat datang pada bot.",
-             parse_mode=Mode Parse.MARKDOWN,
+             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
