@@ -82,38 +82,39 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
-────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
-────────────────────────
-✪ Hit /help to see my available commands.
+*👋 Hello {} !*
+◕ *Saya adalah bot manajemen Grup \nModular dengan beberapa tambahan Fitur! Lihatlah \nBerikut ini Hal-hal yang Bisa saya Bantu.*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+× *Uᴘᴛɪᴍᴇ:* `{}` 
+× `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+◕ *klik help & cmd untuk melihat commands.*
+◕ *Pᴏᴡᴇʀᴇᴅ* [☕](https://telegra.ph/file/be460a5c253d3539059fe.jpg) *Bʏ: @about_db!*
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="emiko_"),
+        InlineKeyboardButton(text=f"Infomation {dispatcher.bot.first_name}", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Support", callback_data="emiko_support"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="Music", callback_data="source_"
         ),
     ],
     [
-        InlineKeyboardButton(
-            text="➗ Add Me To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+        InlineKeyboardButton(text="Help & Command", url=f"https://t.me/{bu}?start=help"),
     ],
 ]
 
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command."""
+ᴊᴀᴅɪᴋᴀɴ & ʙᴇʀɪ sᴀʏᴀ ɪᴊɪɴ *ADMIN* ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴀɢᴀʀ ʙɪsᴀ ᴀɴᴅᴀ,
+ɢᴜɴᴀᴋᴀɴ.ᴋᴇᴍᴜᴅɪᴀɴ ᴋʟɪᴄᴋ ᴄᴏᴍᴍᴀɴᴅ ᴅɪ ʙᴀᴡᴀʜ & ʜᴀʀᴀᴘ *BACA DULU KETERANGANNYA* sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴɴʏᴀ"""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @excrybaby \
+ You can support the project by contacting @xdazher \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -227,11 +228,6 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
                 disable_web_page_preview=False,
             )
-    else:
-        update.effective_message.reply_text(
-            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
-            parse_mode=ParseMode.HTML
-       )
 
 
 def error_handler(update, context):
@@ -360,29 +356,22 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text=f"๏ I'm *{dispatcher.bot.first_name}*, a powerful group management bot built to help you manage your group easily."
-            "\n• I can restrict users."
-            "\n• I can greet users with customizable welcome messages and even set a group's rules."
-            "\n• I have an advanced anti-flood system."
-            "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
-            "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
-            "\n• I check for admins' permissions before executing any command and more stuffs"
+            text=f"๏ Saya *{dispatcher.bot.first_name}*, bot manajemen grup yang kuat yang dibuat untuk membantu Anda mengelola grup dengan mudah."
+            "\n\n• Saya dapat membatasi pengguna."
+            "\n• Saya dapat menyapa pengguna dengan pesan selamat datang yang dapat disesuaikan dan bahkan menetapkan aturan grup."
+            "\n• Saya memiliki sistem anti-spam yang canggih."
+            "\n• Saya dapat memperingatkan pengguna hingga mereka mencapai peringatan maksimal, dengan setiap tindakan yang telah ditentukan sebelumnya seperti larangan, bisu, tendangan, dll."
+            "\n• Saya memiliki sistem pencatatan, daftar hitam, dan bahkan balasan yang telah ditentukan sebelumnya untuk kata kunci tertentu."
+            "\n• *Berikan Saya izin admin sebelum menjalankan perintah apa pun dan hal lainnya*"
             f"\n\n_{dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0_"
-            f"\n\n Click on button bellow to get basic help for {dispatcher.bot.first_name}.",
+            f"\n Click on button bellow to get basic help for {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/EmikoRobot"),
+                    InlineKeyboardButton(text="Support", url="t.me/about_db"),
+                    InlineKeyboardButton(text="Owner", url="t.me/xdazher"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -435,14 +424,14 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Emiko support chats*"
-            f"\nJoin My Support Group/Channel for see or report a problem on {dispatcher.bot.first_name}.",
+            text="*๏ StreamBot support ingfo*"
+            f"\nJoin My Support Channel for see or report a problem on {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/emikosupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="Support", url="t.me/about_db"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/xdazher"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -453,61 +442,30 @@ def emiko_about_callback(update, context):
         )
 
 
-    elif query.data == "emiko_credit":
-        query.message.edit_text(
-            text=f"๏ Credis for {dispatcher.bot.first_name}\n"
-            f"\nHere Developers Making And Give Inspiration For Made The {dispatcher.bot.first_name}",
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="sena-ex", url="https://github.com/kennedy-ex"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Feri", url="https://github.com/FeriEXP"),
-                    InlineKeyboardButton(text="riz-ex", url="https://github.com/riz-ex"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Anime Kaizoku", url="https://github.com/animekaizoku"),
-                    InlineKeyboardButton(text="TheGhost Hunter", url="https://github.com/HuntingBots"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Inuka Asith", url="https://github.com/inukaasith"),
-                    InlineKeyboardButton(text="Noob-Kittu", url="https://github.com/noob-kittu"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
-                 ]
-                ]
-            ),
-        )
-
 def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
             text="๏›› This advance command for Musicplayer."
-            "\n\n๏ Command for admins only."
-            "\n • `/reload` - For refreshing the adminlist."
-            "\n • `/pause` - To pause the playback."
-            "\n • `/resume` - To resuming the playback You've paused."
-            "\n • `/skip` - To skipping the player."
-            "\n • `/end` - For end the playback."
-            "\n • `/musicplayer <on/off>` - Toggle for turn ON or turn OFF the musicplayer."
-            "\n\n๏ Command for all members."
-            "\n • `/play` <query /reply audio> - Playing music via YouTube."
-            "\n • `/playlist` - To playing a playlist of groups or your personal playlist",
+            "\n\n✗ *Command Bot Music For Admin.*"
+            "\n◕ `/play` pencarian dari YouTube."
+            "\n◕ `/playlist` Chec playlist anda."
+            "\n◕ `/song` download lagu dengan di private bot"
+            "\n◕ `/skip` untuk memutar track selanjutnya."
+            "\n◕ `/stop` untuk menghentikan musik"
+            "\n◕ `/playmode` untuk mengatur mode"
+            "\n\n✗ *Command for all members.*"
+            "\n • `/play` <query /reply audio> - play music via youtube."
+            "\n • `/playlist` - untuk melihat daftar putar" 
+            "\n\n✗ *Pᴏᴡᴇʀᴇᴅ ☕ By : @about_db!*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_")
+                    InlineKeyboardButton(
+                           text="Add Bot", url=f"https://t.me/{bu}?startgroup=new"),
+                    InlineKeyboardButton(text="Go Home", callback_data="emiko_back")
                  ]
                 ]
             ),
@@ -550,20 +508,7 @@ def get_help(update: Update, context: CallbackContext):
                 ),
             )
             return
-        update.effective_message.reply_text(
-            "Contact me in PM to get the list of possible commands.",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="Help",
-                            url="t.me/{}?start=help".format(context.bot.username),
-                        )
-                    ]
-                ]
-            ),
-        )
-        return
+
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
@@ -749,7 +694,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1866066766:
+        if OWNER_ID != 2056203142:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -798,7 +743,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi, i'm alive.",
+                "⚠️ Bot Sudah Aktif ⚠️",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
