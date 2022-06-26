@@ -410,7 +410,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_")
+                    InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
                     InlineKeyboardButton(text="Go Notes", callback_data="emiko_notes")
                  ]
                 ]
