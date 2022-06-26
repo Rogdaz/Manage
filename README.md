@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://telegra.ph/file/dec457da2d531e9456c97.jpg">
+  <img src="https://telegra.ph/file/d0619994d9ed62070ef76.jpg">
 </p>
 
 <h4><p align="center"> DAZREPO ROBOT </p></h4>
 
-<p align="center">DazRepo Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
+<p align="center">Daz-Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
 
 <p align="center">
 <a href="https://t.me/Aikarobot"> <img src="https://img.shields.io/badge/Emiko-Robot-blue?&logo=telegram" alt="Emiko on Telegram" /> </a><br>
