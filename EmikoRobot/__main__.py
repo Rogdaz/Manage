@@ -97,9 +97,9 @@ buttons = [
         InlineKeyboardButton(text=f"Infomation {dispatcher.bot.first_name}", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="Support", callback_data="emiko_support"),
+        InlineKeyboardButton(text="Fitur Adm", callback_data="emiko_admin"),
         InlineKeyboardButton(
-            text="Music", callback_data="source_"
+            text="Music Bot", callback_data="source_"
         ),
     ],
     [
@@ -396,30 +396,36 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_admin":
         query.message.edit_text(
-            text=f"*๏ Let's make your group bit effective now*"
-            f"\nCongragulations, {dispatcher.bot.first_name} now ready to manage your group."
-            "\n\n*Admin Tools*"
-            "\nBasic Admin tools help you to protect and powerup your group."
-            "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
-            "\n\n*Greetings*"
-            "\nLets set a welcome message to welcome new users coming to your group."
-            "\nsend `/setwelcome [message]` to set a welcome message!",
-            parse_mode=ParseMode.MARKDOWN,
+            text=f"*๏ Ayo buat grup Anda sedikit efektif sekarang*"
+            f"\nSelamat, {dispatcher.bot.first_name} sekarang siap untuk mengelola grup Anda."
+             "\n\n*Fitur Admin*"
+             "\nAlat Admin Dasar membantu Anda melindungi dan memperkuat grup Anda."
+             "\nAnda dapat mencekal anggota, Menendang anggota, Mempromosikan seseorang sebagai admin melalui perintah bot."
+             "\n\n*Selamat Datang*"
+             "\nMari kita atur pesan selamat datang untuk menyambut pengguna baru yang datang ke grup Anda."
+             "\nkirim ``/setwelcome`` [pesan] untuk menyetel pesan selamat datang!"
+             "\nKirim ``/welcome`` [off/on] untuk mematikan pesan selamat datang pada bot.",
+             parse_mode=Mode Parse.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="emiko_")
+                    InlineKeyboardButton(text="Go Notes", callback_data="emiko_notes")
+                 ]
+                ]
             ),
         )
 
     elif query.data == "emiko_notes":
         query.message.edit_text(
-            text=f"<b>๏ Setting up notes</b>"
-            f"\nYou can save message/media/audio or anything as notes"
-            f"\nto get a note simply use # at the beginning of a word"
-            f"\n\nYou can also set buttons for notes and filters (refer help menu)",
+            text=f"<b>๏ Setting untuk notes</b>"
+             f"\nAnda dapat menyimpan pesan/media/audio atau apa pun sebagai catatan"
+             f"\nUntuk mendapatkan catatan cukup gunakan # di awal kata"
+             f"\n\nAnda juga dapat mengatur tombol untuk catatan dan filter (lihat menu bantuan)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="Go Musik", callback_data="source_")]]
             ),
         )
     elif query.data == "emiko_support":
