@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://telegra.ph/file/5a180a318e09d49295c8e.jpg">
+  <img src="https://telegra.ph/file/dec457da2d531e9456c97.jpg">
 </p>
 
-<h4><p align="center"> EMIKO ROBOT </p></h4>
+<h4><p align="center"> DAZREPO ROBOT </p></h4>
 
-<p align="center">Emiko Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
+<p align="center">DazRepo Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
 
 <p align="center">
 <a href="https://t.me/Aikarobot"> <img src="https://img.shields.io/badge/Emiko-Robot-blue?&logo=telegram" alt="Emiko on Telegram" /> </a><br>
@@ -12,8 +12,8 @@
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a><br>
 <a href="https://docs.telethon.dev"> <img src="https://img.shields.io/badge/Telethon-1.24.0-red?&style=flat-round&logo=github" alt="Telethon" /> </a>
 <a href="https://docs.python.org"> <img src="https://img.shields.io/badge/Python-3.10.4-purple?&style=flat-round&logo=python" alt="Python" /> </a><br>
-<a href="https://GitHub.com/kennedy-ex/EmikoRobot"> <img src="https://img.shields.io/badge/Maintained-Yash-yellow.svg" alt="Maintenance" /> </a><br>
-<a href="https://github.com/kennedy-ex/EmikoRobot/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License" /> </a>
+<a href="https://GitHub.com/DazRepo"> <img src="https://img.shields.io/badge/Maintained-Yash-yellow.svg" alt="Maintenance" /> </a><br>
+<a href="https://github.com/DazRepo/BotManage/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License" /> </a>
 <a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-blue.svg?style=flat-round" alt="PRs" /> </a>
 </p>
 
@@ -34,13 +34,21 @@ This Bot is Created by KennedyProject, If your kanging this without fork at leas
 - TheRealPhoenixBot
 - DaisyX 
 - WilliamButcherBot
+- Dazii
 ```
+
+## ✨ Heroku Deploy ✨
+The easiest way to deploy this Bot is via Heroku.
+
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/DazRepo/BotManage"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
+
 
 ### Support
 <p>
 <a href="https://t.me/excrybaby"> <img src="https://img.shields.io/badge/Sena-Ex-blue?&logo=telegram" alt="Sena on Telegram" /> </a><br>
-<a href="https://t.me/EmikoSupport"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
-<a href="https://t.me/KennedyProject"> <img src="https://img.shields.io/badge/Update-Channel-blue?&logo=telegram" alt="Update Channel" /> </a><br>
+<a href="https://t.me/xdazher"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
+<a href="https://t.me/about_db"> <img src="https://img.shields.io/badge/Update-Channel-blue?&logo=telegram" alt="Update Channel" /> </a><br>
 </p>
 
 ## Credit 
@@ -50,3 +58,5 @@ This Bot is Created by KennedyProject, If your kanging this without fork at leas
 • [Arya](https://github.com/aryazakaria01)
 
 • [Kyy](https://github.com/zxcskyy)
+
+• [Dazi](https://github.com/DazRepo)
