@@ -1,5 +1,5 @@
 import itertools
-import Yuriko.modules.sql.language_sql as sql
+import EmikoRobot.modules.sql.language_sql as sql
 
 from typing import Union, List, Dict, Callable, Generator, Any
 
@@ -7,7 +7,7 @@ from collections.abc import Iterable
 from telegram.ext import CommandHandler, CallbackQueryHandler
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 
-from Yuriko import dispatcher
+from EmikoRobot import dispatcher
 from EmikoRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
 from EmikoRobot.language import get_string, get_languages, get_language
 
