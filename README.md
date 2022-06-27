@@ -19,7 +19,7 @@
 
 ### TUTORIAL
 
-- First fork this repository.
+- First [fork](https://github.com/kennedy-ex/EmikoRobot) this repository.
 - Then change the deploy link bellow.
 - This step must be doing because mine link is violates the salesforce acceptable use.
 - You can just change the name of github on deploy link and done, the repos able to deploy on heroku.
