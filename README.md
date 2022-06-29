@@ -2,9 +2,9 @@
   <img src="https://telegra.ph/file/d0619994d9ed62070ef76.jpg">
 </p>
 
-<h4><p align="center"> DAZREPO ROBOT </p></h4>
+<h4><p align="center"> •STREAM ROBOT• </p></h4>
 
-<p align="center">Daz-Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
+<p align="center">Stream-Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
 
 <p align="center">
 <a href="https://t.me/xdbmusic_bot"> <img src="https://img.shields.io/badge/Stream-Robot-blue?&logo=telegram" alt="Stream on Telegram" /> </a><br>
