@@ -30,7 +30,7 @@ async def purge_messages(event):
 
     reply_msg = await event.get_reply_message()
     if not reply_msg:
-        await event.reply("Reply to a message to select where to start purging from.")
+        await event.reply("Replay pesan untuk memilih pembersihan dari awal.")
         return
     messages = []
     message_id = reply_msg.id
@@ -48,7 +48,7 @@ async def purge_messages(event):
     except:
         pass
     time_ = time.perf_counter() - start
-    text = f"Purged Successfully in {time_:0.2f} Second(s)"
+    text = f"Purge Sukses In {time_:0.2f} Second"
     await event.respond(text, parse_mode="markdown")
 
 async def delete_messages(event):
