@@ -7,6 +7,9 @@ import re
 import sys
 import traceback
 import EmikoRobot.modules.sql.users_sql as sql
+from telegram import __version__ as telever
+from telethon import __version__ as tlhver
+from pyrogram import __version__ as pyrover
 from sys import argv
 from typing import Optional
 from telegram import __version__ as peler
@@ -749,7 +752,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "⚠️ Bot Sudah Aktif ⚠️",
+                "⚠️ Bot Sudah Aktif ⚠️\n\n✵ **Library Version :** `{telever}` \n✵ **Telethon Version :** `{tlhver}` \n✵ **Pyrogram Version :** `{pyrover}` \n", 
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
