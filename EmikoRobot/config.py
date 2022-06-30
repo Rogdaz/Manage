@@ -31,7 +31,7 @@ class Config(object):
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
     MONGO_DB_URI = "mongo+srv"  # needed for any database modules
-    ARQ_API_URL = "https://grambuilders.tech"
+    ARQ_API_URL = "http://arq.hamker.dev"
     ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
     BOT_API_URL = "https://api.telegram.org/bot"
     LOAD = []
