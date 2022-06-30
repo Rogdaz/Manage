@@ -19,7 +19,7 @@ class Config(object):
     OPENWEATHERMAP_ID = 22322
     OWNER_USERNAME = "Scotchers"
     BOT_USERNAME = "EmiexRobot"
-    SUPPORT_CHAT = "FumikaSupportGroup"  # Your own group for support, do not add the @
+    SUPPORT_CHAT = ""  # Your own group for support, do not add the @
     JOIN_LOGGER = (
         -1001748076180
     )  # Prints any new group the bot is added to, prints just the name and ID.
@@ -31,7 +31,7 @@ class Config(object):
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
     MONGO_DB_URI = "mongo+srv"  # needed for any database modules
-    ARQ_API_URL = "https://arq.hamker.in"
+    ARQ_API_URL = "https://grambuilders.tech"
     ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
     BOT_API_URL = "https://api.telegram.org/bot"
     LOAD = []
