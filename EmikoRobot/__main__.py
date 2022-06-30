@@ -752,7 +752,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "⚠️ Bot Sudah Aktif ⚠️\n\n✵ **Library Version :** `{telever}` \n✵ **Telethon Version :** `{tlhver}` \n✵ **Pyrogram Version :** `{pyrover}` \n", 
+                f"⚠️ Bot Sudah Aktif ⚠️\n\n✵ **Library Version :** `{telever}` \n✵ **Telethon Version :** `{tlhver}` \n✵ **Pyrogram Version :** `{pyrover}` \n", 
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
