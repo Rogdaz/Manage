@@ -457,14 +457,14 @@ def Source_about_callback(update, context):
         query.message.edit_text(
             text="๏›› This advance command for Musicplayer."
             "\n\n✗ *Command Bot Music For Admin.*"
-            "\n◕ `/play` pencarian dari YouTube."
+            "\n◕ `/play` play via pencarian dari YouTube."
             "\n◕ `/playlist` untuk melihat daftar antrean."
             "\n◕ `/song` download lagu dengan di private bot"
             "\n◕ `/skip` untuk memutar track selanjutnya."
             "\n◕ `/stop` untuk menghentikan musik"
             "\n◕ `/playmode` untuk mengatur mode"
             "\n\n✗ *Command for all members.*"
-            "\n • `/play` <query /reply audio> - play music via youtube."
+            "\n • `/play` - play musik via search youtube."
             "\n • `/playlist` - untuk melihat daftar antrean" 
             "\n\n✗ *Pᴏᴡᴇʀᴇᴅ ☕ By : @about_db!*",
             parse_mode=ParseMode.MARKDOWN,
