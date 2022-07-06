@@ -400,14 +400,14 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_admin":
         query.message.edit_text(
             text=f"*๏›› Ayo buat grup Anda sedikit efektif sekarang*"
-            f"\nSelamat, {dispatcher.bot.first_name} sekarang siap untuk mengelola grup Anda."
+            f"\n\nSelamat, {dispatcher.bot.first_name} sekarang siap untuk mengelola grup Anda."
              "\n\n*Fitur Admin*"
              "\n• Alat Admin Dasar membantu Anda melindungi dan memperkuat grup Anda."
              "\n• Anda dapat mencekal anggota, Menendang anggota, Mempromosikan seseorang sebagai admin melalui perintah bot."
              "\n\n*Selamat Datang*"
              "\n• Mari kita atur pesan selamat datang untuk menyambut pengguna baru yang datang ke grup Anda."
-             "\n• Kirim ``/setwelcome`` [pesan] untuk menyetel pesan selamat datang!"
-             "\n• Kirim ``/welcome`` [off/on] untuk mematikan pesan selamat datang pada bot.",
+             "\n• Kirim ``/setwelcome`` [pesan] untuk menyetel pesan selamat datang pada group!"
+             "\n• Kirim ``/welcome`` [off/on] untuk mematikan pesan selamat datang pada bot di group.",
              parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -423,7 +423,7 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_notes":
         query.message.edit_text(
             text=f"<b>๏›› Setting untuk notes</b>"
-             f"\n• Anda dapat menyimpan pesan/media/audio atau apa pun sebagai catatan"
+             f"\n\n• Anda dapat menyimpan pesan/media/audio atau apa pun sebagai catatan"
              f"\n• Untuk mendapatkan catatan cukup gunakan # di awal kata"
              f"\n\nAnda juga dapat mengatur tombol untuk catatan dan filter (lihat menu bantuan)",
             parse_mode=ParseMode.HTML,
