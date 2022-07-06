@@ -455,7 +455,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="๏›› This advance command for Musicplayer."
+            text="๏›› Ini Command untuk Music player."
             "\n\n✗ *Command Bot Music For Admin.*"
             "\n◕ `/play` play via pencarian dari YouTube."
             "\n◕ `/playlist` untuk melihat daftar antrean."
