@@ -131,7 +131,6 @@
          "required": true,
          "value": "QAVLSU-KTJTBJ-CPVWUT-TITDGJ-ARQ"
         },
-
       "SPAMWATCH_API": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
