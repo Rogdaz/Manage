@@ -113,8 +113,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-ᴊᴀᴅɪᴋᴀɴ & ʙᴇʀɪ sᴀʏᴀ ɪᴊɪɴ *ADMIN* ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴀɢᴀʀ ʙɪsᴀ ᴀɴᴅᴀ,
-ɢᴜɴᴀᴋᴀɴ.ᴋᴇᴍᴜᴅɪᴀɴ ᴋʟɪᴄᴋ ᴄᴏᴍᴍᴀɴᴅ ᴅɪ ʙᴀᴡᴀʜ & ʜᴀʀᴀᴘ *BACA DULU KETERANGANNYA* sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴɴʏᴀ"""
+ᴊᴀᴅɪᴋᴀɴ & ʙᴇʀɪ sᴀʏᴀ ɪᴊɪɴ *ADMIN* ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴀɢᴀʀ ʙɪsᴀ ᴀɴᴅᴀ ɢᴜɴᴀᴋᴀɴ.ᴋᴇᴍᴜᴅɪᴀɴ ᴋʟɪᴄᴋ ᴄᴏᴍᴍᴀɴᴅ ᴅɪ ʙᴀᴡᴀʜ & ʜᴀʀᴀᴘ *BACA DULU KETERANGANNYA* sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴɴʏᴀ"""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
