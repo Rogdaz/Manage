@@ -85,8 +85,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*👋 Hello {} !*
-◕ *Saya adalah bot manajemen Grup \nModular dengan beberapa tambahan Fitur! Lihatlah \nBerikut ini Hal-hal yang Bisa saya Bantu.*
+*👋 Hello {} !* 
+
+◕ *Saya adalah bot manajemen Grup Modular dengan beberapa tambahan Fitur! Lihatlah Berikut ini Hal-hal yang Bisa saya Bantu.*
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 × *Uᴘᴛɪᴍᴇ:* `{}` 
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
@@ -359,15 +360,14 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text=f"๏›› Saya *{dispatcher.bot.first_name}*, bot manajemen grup yang kuat yang dibuat untuk membantu Anda mengelola grup dengan mudah."
+            text=f"๏›› Saya *{dispatcher.bot.first_name}*, \nbot manajemen grup yang kuat yang dibuat untuk membantu Anda mengelola grup dengan mudah."
             "\n\n• Saya dapat membatasi pengguna."
             "\n• Saya dapat menyapa pengguna dengan pesan selamat datang yang dapat disesuaikan dan bahkan menetapkan aturan grup."
             "\n• Saya memiliki sistem anti-spam yang canggih."
             "\n• Saya dapat memperingatkan pengguna hingga mereka mencapai peringatan maksimal, dengan setiap tindakan yang telah ditentukan sebelumnya seperti larangan, bisu, tendangan, dll."
             "\n• Saya memiliki sistem pencatatan, daftar hitam, dan bahkan balasan yang telah ditentukan sebelumnya untuk kata kunci tertentu."
             "\n• *Berikan Saya izin admin sebelum menjalankan perintah apa pun dan hal lainnya*"
-            f"\n\n_{dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0_"
-            f"\n Click on button bellow to get basic help for {dispatcher.bot.first_name}.",
+            f"\n\n_{dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0_ Click on button bellow to get basic help for {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
