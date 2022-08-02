@@ -98,7 +98,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"📣 Infomation {dispatcher.bot.first_name} 📣", callback_data="emiko_"),
+        InlineKeyboardButton(text=f"🤖 About {dispatcher.bot.first_name} 🤖", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="💬 Fitur Admin", callback_data="emiko_admin"),
