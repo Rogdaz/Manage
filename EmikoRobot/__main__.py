@@ -113,7 +113,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-ᴊᴀᴅɪᴋᴀɴ & ʙᴇʀɪ sᴀʏᴀ ɪᴊɪɴ *ADMIN* ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴀɢᴀʀ ʙɪsᴀ ᴀɴᴅᴀ ɢᴜɴᴀᴋᴀɴ.ᴋᴇᴍᴜᴅɪᴀɴ ᴋʟɪᴄᴋ ᴄᴏᴍᴍᴀɴᴅ ᴅɪ ʙᴀᴡᴀʜ & ʜᴀʀᴀᴘ *BACA DULU KETERANGANNYA* sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴɴʏᴀ"""
+Jadikan & berikan saya ijin **ADMIN** terlebih dahulu agar bisa anda gunakan, Kemudian klick command di bawah & harap **BACA DULU KETERANGANNYA** sebelum menggunakannya."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
