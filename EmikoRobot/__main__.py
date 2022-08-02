@@ -93,7 +93,7 @@ PM_START_TEXT = """
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ◕ *klik help & cmd untuk melihat commands.*
-◕ *Pᴏᴡᴇʀᴇᴅ* [☕](https://telegra.ph/file/be460a5c253d3539059fe.jpg) *Bʏ: @about_db!*
+◕ *Pᴏᴡᴇʀᴇᴅ* [☕](https://telegra.ph/file/1afa11b71228ef67aefc5.jpg) *Bʏ: @about_db!*
 """
 
 buttons = [
