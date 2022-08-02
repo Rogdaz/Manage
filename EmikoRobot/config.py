@@ -12,21 +12,19 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1606221784  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    API_ID =  # integer value, dont use ""
+    API_HASH = ""
+    TOKEN = ""  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID =  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OPENWEATHERMAP_ID = 22322
-    OWNER_USERNAME = "Scotchers"
-    BOT_USERNAME = "EmiexRobot"
+    OWNER_USERNAME = ""
+    BOT_USERNAME = ""
     SUPPORT_CHAT = ""  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001748076180
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001748076180
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    ERROR_LOG = -1001657496255
+    ERROR_LOG =
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
@@ -63,27 +61,27 @@ class Config(object):
     BAN_STICKER = ""  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
     CASH_API_KEY = (
-        "awoo"  # Get your API key from https://www.alphavantage.co/support/#api-key
+        ""  # Get your API key from https://www.alphavantage.co/support/#api-key
     )
-    TIME_API_KEY = "awoo"  # Get your API key from https://timezonedb.com/api
+    TIME_API_KEY = ""  # Get your API key from https://timezonedb.com/api
     WALL_API = (
-        "awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php
+        ""  # For wallpapers, get one from https://wall.alphacoders.com/api.php
     )
-    AI_API_KEY = "awoo"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
+    AI_API_KEY = ""  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
     ALLOW_CHATS = None
     TEMP_DOWNLOAD_DIRECTORY = "./"
-    HEROKU_APP_NAME = "siap"
-    HEROKU_API_KEY = "YES"
-    REM_BG_API_KEY = "yahoo"
-    LASTFM_API_KEY = "yeah"
-    CF_API_KEY = "jk"
+    HEROKU_APP_NAME = ""
+    HEROKU_API_KEY = ""
+    REM_BG_API_KEY = ""
+    LASTFM_API_KEY = ""
+    CF_API_KEY = ""
     BL_CHATS = []  # List of groups that you want blacklisted.
-    SESSION_STRING = "12342"
-    STRING_SESSION = "kontol"
+    SESSION_STRING = ""
+    STRING_SESSION = ""
     MONGO_PORT = 27017
-    MONGO_DB = "Emiko"
+    MONGO_DB = ""
 
 class Production(Config):
     LOGGER = True
