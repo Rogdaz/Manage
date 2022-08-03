@@ -108,9 +108,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="⛑️ Help & Command ⛑️", url=f"https://t.me/{bu}?start=help"),
-        InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
-        ),
+
     ],
 ]
 
