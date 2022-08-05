@@ -114,7 +114,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Jadikan & berikan saya ijin **ADMIN** terlebih dahulu agar bisa anda gunakan, Kemudian klick command di bawah & harap **BACA DULU KETERANGANNYA** sebelum menggunakannya."""
+Jadikan & berikan saya ijin 𝗔𝗗𝗠𝗜𝗡 terlebih dahulu agar bisa anda gunakan, Kemudian klick command di bawah & harap 𝗕𝗔𝗖𝗔 𝗗𝗨𝗟𝗨 𝗞𝗘𝗧𝗘𝗥𝗔𝗡𝗚𝗔𝗡𝗡𝗬𝗔 sebelum menggunakannya."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
