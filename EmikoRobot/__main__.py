@@ -98,16 +98,16 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"🤖 About {dispatcher.bot.first_name} 🤖", callback_data="emiko_"),
+        InlineKeyboardButton(text=f"📣 About {dispatcher.bot.first_name}", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="💬 Fitur Admin", callback_data="emiko_admin"),
         InlineKeyboardButton(
-            text="Music Bot 🎵", callback_data="source_"
+            text="🎵 Music Bot", callback_data="source_"
         ),
     ],
     [
-        InlineKeyboardButton(text="⛑️ Help & Command ⛑️", url=f"https://t.me/{bu}?start=help"),
+        InlineKeyboardButton(text="⁉️ Help & Command", callback_data="help_back"),
 
     ],
 ]
@@ -477,7 +477,10 @@ def Source_about_callback(update, context):
                     InlineKeyboardButton(text="Go Home", callback_data="emiko_back")
                  ]
                 ]
-            ),
+                 [
+                    InlineKeyboardButton(text="Help Form Musik", url=f"https://t.me/{bu}?start=help@xdbmusicbot"),
+              ]
+           ),
         )
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
