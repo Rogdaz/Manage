@@ -473,8 +473,12 @@ def Source_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(
-                           text="Add Bot", url=f"https://t.me/{bu}?startgroup=new"),
-                    InlineKeyboardButton(text="Help Form Musik", url=f"https://t.me/{bu}?start=help_xdbmusicbot")
+                           text="✚ Add Bot", url=f"https://t.me/{bu}?startgroup=new"),
+                     InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdbmusicbot"),
+                 ],
+                 [
+                      InlineKeyboardButton(text="⬅ Go To Home", callback_data="emiko_"),
+                 
                  ]
                 ]
            ),
