@@ -107,7 +107,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="⁉️ Help & Command", callback_data="help_back"),
+        InlineKeyboardButton(text="❓ Help & Command", callback_data="help_back"),
 
     ],
 ]
@@ -477,7 +477,7 @@ def Source_about_callback(update, context):
                      InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdbmusicbot"),
                  ],
                  [
-                      InlineKeyboardButton(text="⬅ Go To Home", callback_data="emiko_"),
+                      InlineKeyboardButton(text="⬅ Go To Home", callback_data="emiko_back"),
                  
                  ]
                 ]
