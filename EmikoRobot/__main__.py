@@ -474,12 +474,9 @@ def Source_about_callback(update, context):
                  [
                     InlineKeyboardButton(
                            text="Add Bot", url=f"https://t.me/{bu}?startgroup=new"),
-                    InlineKeyboardButton(text="Go Home", callback_data="emiko_back")
+                    InlineKeyboardButton(text="Help Form Musik", url=f"https://t.me/{bu}?start=help@xdbmusicbot")
                  ]
                 ]
-                 [
-                    InlineKeyboardButton(text="Help Form Musik", url=f"https://t.me/{bu}?start=help@xdbmusicbot"),
-              ]
            ),
         )
     elif query.data == "source_back":
