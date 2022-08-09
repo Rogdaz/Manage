@@ -87,7 +87,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *👋 Hello {} !* 
 
-◕ *Saya adalah bot manajemen Grup Modular dengan beberapa tambahan Fitur! Lihatlah Berikut ini Hal-hal yang Bisa saya Bantu.*
+◕ *Saya adalah bot manajemen Grup Modular dengan beberapa tambahan Fitur! Lihatlah Berikut ini Hal-hal yang Bisa saya Bantu untuk mengelola group anda.*
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 × *Uᴘᴛɪᴍᴇ:* `{}` 
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
@@ -377,7 +377,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Owner", url="t.me/xdazher"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
+                    InlineKeyboardButton(text="Go Home", callback_data="emiko_back"),
                  ]
                 ]
             ),
@@ -413,7 +413,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
+                    InlineKeyboardButton(text="Go Home", callback_data="emiko_back"),
                     InlineKeyboardButton(text="Go Notes", callback_data="emiko_notes")
                  ]
                 ]
@@ -443,7 +443,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Updates", url="https://t.me/xdazher"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
                  
                  ]
                 ]
@@ -477,7 +477,7 @@ def Source_about_callback(update, context):
                      InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdbmusicbot"),
                  ],
                  [
-                      InlineKeyboardButton(text="⬅ Go To Home", callback_data="emiko_back"),
+                      InlineKeyboardButton(text="⬅ Go Home", callback_data="emiko_back"),
                  
                  ]
                 ]
